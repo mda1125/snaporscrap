@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Snap or Scrap - Clean Your Camera Roll</title>
+    <meta name="description" content="Snap or Scrap helps you quickly clean up your photo library by swiping through screenshots, blurry photos, duplicates, and large videos—then delete them in seconds.">
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FF3B30",
+                        "accent-purple": "#AF52DE",
+                        "accent-blue": "#007AFF",
+                        "accent-green": "#34C759",
+                        "accent-orange": "#FF9500",
+                        "background-light": "#F2F2F7",
+                        "background-card": "#FFFFFF",
+                        "slate-dark": "#1C1C1E",
+                        "slate-light": "#8E8E93",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    backgroundImage: {
+                        'vibrant-gradient': 'linear-gradient(135deg, #FF3B30 0%, #FF9500 25%, #AF52DE 50%, #007AFF 75%, #34C759 100%)',
+                        'subtle-gradient': 'linear-gradient(180deg, #F2F2F7 0%, #FFFFFF 100%)',
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                        "3xl": "2rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'card': '0 4px 20px rgba(0, 0, 0, 0.05)',
+                        'card-hover': '0 10px 25px rgba(0, 0, 0, 0.08)',
+                        'glow': '0 0 20px rgba(255, 59, 48, 0.3)',
+                    }
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-gradient {
+                @apply bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-purple-500 to-blue-500;
+            }
+            .btn-gradient {
+                @apply bg-gradient-to-r from-red-500 to-purple-600 hover:from-red-600 hover:to-purple-700 text-white shadow-lg shadow-purple-500/30;
+            }
+            .feature-card {
+                @apply bg-background-card rounded-3xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background-light text-slate-dark antialiased overflow-x-hidden font-display">
+    <div class="relative flex flex-col min-h-screen w-full">
+        <!-- Navigation -->
+        <div class="w-full bg-white/90 backdrop-blur-xl sticky top-0 z-50 border-b border-gray-100">
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center py-0">
+                    <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+                        <header class="flex items-center justify-between whitespace-nowrap py-4">
+                            <a href="index.html" class="flex items-center gap-3">
+                                <div class="size-10 bg-gradient-to-br from-blue-400 to-purple-500 rounded-xl flex items-center justify-center shadow-md">
+                                    <span class="material-symbols-outlined text-white text-[24px]">photo_library</span>
+                                </div>
+                                <h2 class="text-slate-dark text-xl font-bold tracking-tight">Snap or Scrap</h2>
+                            </a>
+                            <div class="hidden md:flex items-center gap-10">
+                                <a class="text-slate-600 hover:text-accent-purple transition-colors text-sm font-semibold" href="features.html">Features</a>
+                                <a class="text-slate-600 hover:text-accent-purple transition-colors text-sm font-semibold" href="privacy.html">Privacy</a>
+                                <a class="text-slate-600 hover:text-accent-purple transition-colors text-sm font-semibold" href="support.html">Support</a>
+                            </div>
+                            <div class="flex justify-end">
+                                <button class="btn-gradient flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 transition-all text-sm font-bold tracking-wide">
+                                    <span class="truncate">Get App</span>
+                                </button>
+                            </div>
+                        </header>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="w-full bg-white relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-b from-blue-100/50 to-purple-100/50 rounded-full blur-3xl -z-10 translate-x-1/3 -translate-y-1/4"></div>
+            <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-orange-100/40 to-red-100/40 rounded-full blur-3xl -z-10 -translate-x-1/3 translate-y-1/4"></div>
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center py-5">
+                    <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+                        <div class="@container">
+                            <div class="flex flex-col lg:flex-row gap-16 px-4 py-12 lg:py-20 items-center">
+                                <div class="flex flex-col gap-8 lg:w-1/2 items-start text-left z-10">
+                                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200 shadow-sm">
+                                        <span class="flex h-2 w-2 rounded-full bg-accent-green animate-pulse"></span>
+                                        <span class="text-slate-600 text-xs font-bold uppercase tracking-wider">#1 Cleanup Tool</span>
+                                    </div>
+                                    <h1 class="text-slate-dark text-5xl lg:text-7xl font-extrabold leading-[1.05] tracking-tight">
+                                        Clean up. <br/>
+                                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-purple-600">Level up.</span>
+                                    </h1>
+                                    <p class="text-slate-500 text-lg lg:text-xl font-medium leading-relaxed max-w-[540px]">
+                                        Your gallery is messy. Let's fix that. Delete screenshots, duplicates, and large videos with a fun, satisfying swipe.
+                                    </p>
+                                    <div class="flex flex-col sm:flex-row gap-4 pt-2 w-full sm:w-auto">
+                                        <button class="flex flex-1 sm:flex-none cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-2xl h-14 px-8 bg-slate-dark text-white hover:bg-black transition-all text-base font-bold shadow-xl hover:scale-105 transform duration-200">
+                                            <span class="material-symbols-outlined text-[24px]">ios</span>
+                                            <span class="truncate">Download on App Store</span>
+                                        </button>
+                                    </div>
+                                    <div class="flex items-center gap-4 mt-4 bg-white/60 backdrop-blur-sm p-3 rounded-2xl border border-gray-100 shadow-sm">
+                                        <div class="flex -space-x-3">
+                                            <div class="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-pink-400 to-purple-500"></div>
+                                            <div class="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-blue-400 to-cyan-500"></div>
+                                            <div class="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-orange-400 to-red-500"></div>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <div class="flex text-accent-orange text-sm">★★★★★</div>
+                                            <span class="text-xs font-bold text-slate-600">Loved by 10k+ users</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lg:w-1/2 w-full flex justify-center lg:justify-end relative">
+                                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-accent-blue/20 via-accent-purple/20 to-accent-orange/20 rounded-full blur-[80px] -z-10"></div>
+                                    <div class="relative w-full max-w-[340px] aspect-[9/19.5] rounded-[3.5rem] border-[12px] border-slate-900 shadow-2xl overflow-hidden bg-black z-20">
+                                        <div class="h-full w-full bg-background-light relative flex flex-col overflow-hidden">
+                                            <div class="absolute top-0 w-full h-12 z-40 flex justify-center items-end pb-2">
+                                                <div class="w-28 h-7 bg-black rounded-b-3xl"></div>
+                                            </div>
+                                            <div class="pt-14 px-6 pb-2 flex justify-between items-center z-10 bg-white/50 backdrop-blur-md">
+                                                <div class="flex flex-col">
+                                                    <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Reviewing</span>
+                                                    <span class="text-xl font-black text-slate-800">Camera Roll</span>
+                                                </div>
+                                                <div class="size-8 rounded-full bg-white border border-gray-100 shadow-sm flex items-center justify-center">
+                                                    <span class="material-symbols-outlined text-slate-600 text-sm">tune</span>
+                                                </div>
+                                            </div>
+                                            <div class="flex-1 relative flex flex-col items-center justify-center px-4 pb-24">
+                                                <div class="absolute w-[80%] h-[55%] bg-white rounded-3xl shadow-sm scale-90 -translate-y-12 opacity-40 border border-gray-100"></div>
+                                                <div class="absolute w-[85%] h-[55%] bg-white rounded-3xl shadow-md scale-95 -translate-y-6 opacity-70 border border-gray-100 rotate-[-2deg]"></div>
+                                                <div class="relative w-full h-[60%] bg-gradient-to-br from-amber-200 via-orange-300 to-amber-400 rounded-3xl shadow-2xl overflow-hidden border border-gray-100 z-20 group">
+                                                    <div class="absolute inset-0 bg-gradient-to-b from-black/5 via-transparent to-black/70"></div>
+                                                    <div class="absolute top-4 left-1/2 -translate-x-1/2 bg-black/30 backdrop-blur-md border border-white/20 px-3 py-1 rounded-full">
+                                                        <span class="text-white text-xs font-semibold tracking-wide">Jan 12, 2023</span>
+                                                    </div>
+                                                    <div class="absolute bottom-4 left-4 right-4 text-white flex justify-between items-end">
+                                                        <div>
+                                                            <p class="font-semibold text-sm">Golden_Retriever.jpg</p>
+                                                            <p class="text-xs opacity-70">4.2 MB • 12MP</p>
+                                                        </div>
+                                                        <div class="flex items-center gap-1 bg-white/20 backdrop-blur-sm px-2 py-1 rounded-lg">
+                                                            <span class="material-symbols-outlined text-sm">photo</span>
+                                                            <span class="text-[10px] font-bold">HEIC</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="absolute bottom-6 w-full px-8 flex justify-between items-center z-30">
+                                                    <div class="flex flex-col items-center gap-1 group cursor-pointer">
+                                                        <div class="size-14 rounded-full bg-white shadow-lg shadow-red-100 border border-red-50 text-red-500 flex items-center justify-center group-hover:scale-110 group-hover:bg-red-50 transition-all duration-200">
+                                                            <span class="material-symbols-outlined text-[28px]">delete</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex flex-col items-center gap-1 group cursor-pointer">
+                                                        <div class="size-14 rounded-full bg-gradient-to-r from-accent-green to-emerald-500 shadow-lg shadow-green-200 text-white flex items-center justify-center group-hover:scale-110 group-hover:shadow-green-300 transition-all duration-200">
+                                                            <span class="material-symbols-outlined text-[28px]">favorite</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="w-full bg-background-light py-10">
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                            <div class="feature-card flex flex-col items-center text-center justify-center gap-2">
+                                <span class="material-symbols-outlined text-accent-blue text-[32px]">delete_sweep</span>
+                                <h3 class="text-3xl font-black text-slate-800">10M+</h3>
+                                <p class="text-slate-500 text-sm font-medium">Photos Deleted</p>
+                            </div>
+                            <div class="feature-card flex flex-col items-center text-center justify-center gap-2">
+                                <span class="material-symbols-outlined text-accent-purple text-[32px]">cloud_off</span>
+                                <h3 class="text-3xl font-black text-slate-800">500TB</h3>
+                                <p class="text-slate-500 text-sm font-medium">Space Saved</p>
+                            </div>
+                            <div class="feature-card flex flex-col items-center text-center justify-center gap-2">
+                                <span class="material-symbols-outlined text-accent-orange text-[32px]">bolt</span>
+                                <h3 class="text-3xl font-black text-slate-800">5k+</h3>
+                                <p class="text-slate-500 text-sm font-medium">Daily Users</p>
+                            </div>
+                            <div class="feature-card flex flex-col items-center text-center justify-center gap-2">
+                                <span class="material-symbols-outlined text-accent-green text-[32px]">star</span>
+                                <h3 class="text-3xl font-black text-slate-800">4.9</h3>
+                                <p class="text-slate-500 text-sm font-medium">App Store Rating</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Preview Section -->
+        <div class="w-full bg-white py-20" id="features">
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+                        <div class="flex flex-col gap-12 px-4">
+                            <div class="flex flex-col gap-4 text-left md:text-center items-start md:items-center mb-4">
+                                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-yellow-50 text-accent-orange text-xs font-bold uppercase tracking-wider border border-yellow-100">
+                                    <span class="material-symbols-outlined text-[16px]">lightbulb</span>
+                                    Smart Insights
+                                </div>
+                                <h2 class="text-slate-900 text-4xl md:text-5xl font-black leading-tight max-w-[720px]">
+                                    Your gallery, organized <br/>
+                                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-purple to-accent-blue">automatically.</span>
+                                </h2>
+                                <p class="text-slate-500 text-lg font-medium leading-relaxed max-w-[600px]">
+                                    We categorize your clutter so you don't have to. Tap a category and start swiping to reclaim space instantly.
+                                </p>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                                <div class="group relative rounded-3xl p-6 bg-white border border-gray-100 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                                    <div class="absolute top-0 right-0 w-32 h-32 bg-green-100/50 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+                                    <div class="relative flex flex-col h-full justify-between gap-6">
+                                        <div class="size-14 rounded-2xl bg-gradient-to-br from-green-400 to-green-600 text-white flex items-center justify-center shadow-lg shadow-green-200">
+                                            <span class="material-symbols-outlined text-[32px]">videocam</span>
+                                        </div>
+                                        <div>
+                                            <div class="flex justify-between items-center mb-1">
+                                                <h3 class="text-slate-800 text-xl font-bold">Large Videos</h3>
+                                                <span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded-full">Save GBs</span>
+                                            </div>
+                                            <p class="text-slate-500 text-sm">Find and remove the biggest space hogs first. Reclaim gigabytes in minutes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group relative rounded-3xl p-6 bg-white border border-gray-100 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                                    <div class="absolute top-0 right-0 w-32 h-32 bg-purple-100/50 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+                                    <div class="relative flex flex-col h-full justify-between gap-6">
+                                        <div class="size-14 rounded-2xl bg-gradient-to-br from-purple-400 to-purple-600 text-white flex items-center justify-center shadow-lg shadow-purple-200">
+                                            <span class="material-symbols-outlined text-[32px]">screenshot_monitor</span>
+                                        </div>
+                                        <div>
+                                            <div class="flex justify-between items-center mb-1">
+                                                <h3 class="text-slate-800 text-xl font-bold">Screenshots</h3>
+                                            </div>
+                                            <p class="text-slate-500 text-sm">Review all those accidental snaps and old ticket confirmations you don't need.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group relative rounded-3xl p-6 bg-white border border-gray-100 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                                    <div class="absolute top-0 right-0 w-32 h-32 bg-orange-100/50 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+                                    <div class="relative flex flex-col h-full justify-between gap-6">
+                                        <div class="size-14 rounded-2xl bg-gradient-to-br from-orange-400 to-orange-500 text-white flex items-center justify-center shadow-lg shadow-orange-200">
+                                            <span class="material-symbols-outlined text-[32px]">blur_off</span>
+                                        </div>
+                                        <div>
+                                            <div class="flex justify-between items-center mb-1">
+                                                <h3 class="text-slate-800 text-xl font-bold">Blurry Photos</h3>
+                                            </div>
+                                            <p class="text-slate-500 text-sm">Our AI detects shaky, blurry shots so you can keep only the crystal clear memories.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group relative rounded-3xl p-6 bg-white border border-gray-100 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                                    <div class="absolute top-0 right-0 w-32 h-32 bg-red-100/50 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+                                    <div class="relative flex flex-col h-full justify-between gap-6">
+                                        <div class="size-14 rounded-2xl bg-gradient-to-br from-red-400 to-pink-600 text-white flex items-center justify-center shadow-lg shadow-red-200">
+                                            <span class="material-symbols-outlined text-[32px]">calendar_month</span>
+                                        </div>
+                                        <div>
+                                            <div class="flex justify-between items-center mb-1">
+                                                <h3 class="text-slate-800 text-xl font-bold">Timeline</h3>
+                                                <span class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded-full">New</span>
+                                            </div>
+                                            <p class="text-slate-500 text-sm">Browse by month or year. It's like a time machine for finding forgotten gems.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works Section -->
+        <div class="w-full bg-slate-50 py-20 overflow-hidden" id="how-it-works">
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+                        <div class="flex flex-col md:flex-row gap-16 items-center">
+                            <div class="flex-1 flex flex-col gap-10 order-2 md:order-1">
+                                <div class="flex flex-col gap-4">
+                                    <h2 class="text-accent-blue text-sm font-bold tracking-widest uppercase">Simple Gestures</h2>
+                                    <h1 class="text-slate-900 text-4xl font-black leading-tight">Swipe your way to a cleaner phone.</h1>
+                                    <p class="text-slate-600 text-lg">Intuitive gestures make cleaning your gallery feel less like a chore and more like a game.</p>
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="flex gap-5 p-5 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                                        <div class="size-12 rounded-2xl bg-red-100 text-red-500 flex-shrink-0 flex items-center justify-center">
+                                            <span class="material-symbols-outlined">swipe_left</span>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-lg font-bold text-slate-900">Left to Trash</h3>
+                                            <p class="text-slate-500 text-sm mt-1">Don't need it? Swipe left. It goes to a temporary trash bin you can review later.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-5 p-5 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                                        <div class="size-12 rounded-2xl bg-green-100 text-green-600 flex-shrink-0 flex items-center justify-center">
+                                            <span class="material-symbols-outlined">swipe_right</span>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-lg font-bold text-slate-900">Right to Keep</h3>
+                                            <p class="text-slate-500 text-sm mt-1">Love it? Swipe right. It stays safe in your library. You can even favorite it instantly.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-1 order-1 md:order-2 relative w-full flex justify-center">
+                                <div class="relative w-full max-w-[500px] aspect-square flex items-center justify-center">
+                                    <div class="absolute w-[400px] h-[400px] bg-blue-400/10 rounded-full blur-3xl animate-pulse"></div>
+                                    <div class="absolute w-64 h-80 bg-white rounded-3xl shadow-2xl rotate-[-12deg] border-4 border-white flex flex-col overflow-hidden transform origin-bottom-left transition-transform hover:rotate-[-15deg] hover:scale-105 z-0 translate-x-[-40px]">
+                                        <div class="w-full h-full bg-gradient-to-br from-sky-300 via-blue-400 to-indigo-500">
+                                            <div class="absolute inset-0 bg-red-500/20 flex items-center justify-center">
+                                                <div class="bg-red-500 text-white p-3 rounded-full shadow-lg">
+                                                    <span class="material-symbols-outlined text-3xl">delete</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="absolute w-64 h-80 bg-white rounded-3xl shadow-2xl rotate-[6deg] border-4 border-white flex flex-col overflow-hidden z-10 transform origin-bottom-right transition-transform hover:rotate-[8deg] hover:scale-105 translate-x-[40px]">
+                                        <div class="w-full h-full bg-gradient-to-br from-emerald-300 via-green-400 to-teal-500">
+                                            <div class="absolute top-4 right-4 bg-green-500 text-white p-2 rounded-full shadow-lg">
+                                                <span class="material-symbols-outlined">check</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="w-full py-20 px-4 bg-white">
+            <div class="layout-container flex justify-center w-full">
+                <div class="flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1200px] w-full">
+                        <div class="relative rounded-[2.5rem] overflow-hidden bg-gradient-to-r from-purple-600 via-blue-600 to-blue-500 text-white p-10 md:p-20 text-center shadow-2xl shadow-blue-900/20">
+                            <div class="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full -translate-x-1/2 -translate-y-1/2 blur-2xl"></div>
+                            <div class="absolute bottom-0 right-0 w-64 h-64 bg-purple-500/30 rounded-full translate-x-1/2 translate-y-1/2 blur-2xl"></div>
+                            <div class="relative z-10 flex flex-col items-center gap-8 max-w-3xl mx-auto">
+                                <h2 class="text-4xl md:text-6xl font-black leading-tight tracking-tight">Ready to reclaim your storage?</h2>
+                                <p class="text-blue-100 text-lg md:text-xl font-medium max-w-2xl">Join thousands of users who have cleaned up their gallery and rediscovered their best memories.</p>
+                                <div class="flex flex-col items-center gap-3">
+                                    <button class="mt-4 flex cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-2xl h-16 px-10 bg-white text-slate-900 hover:bg-gray-50 transition-all text-lg font-bold shadow-xl hover:scale-105 transform duration-200">
+                                        <span class="material-symbols-outlined text-[28px] text-slate-900">ios</span>
+                                        <span class="truncate">Download on the App Store</span>
+                                    </button>
+                                    <p class="text-sm text-blue-200/80 font-medium">Free to download. No account required.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w-full bg-slate-50 border-t border-gray-200 py-12">
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+                        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                            <a href="index.html" class="flex items-center gap-3">
+                                <div class="size-8 bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-white text-[18px]">photo_library</span>
+                                </div>
+                                <span class="font-bold text-slate-800 text-lg">Snap or Scrap</span>
+                            </a>
+                            <div class="flex flex-wrap justify-center gap-8 text-sm font-semibold text-slate-500">
+                                <a class="hover:text-accent-blue transition-colors" href="privacy.html">Privacy Policy</a>
+                                <a class="hover:text-accent-blue transition-colors" href="support.html">Support</a>
+                                <a class="hover:text-accent-blue transition-colors" href="features.html">Features</a>
+                            </div>
+                            <div class="flex gap-4">
+                                <a class="size-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-slate-400 hover:text-accent-blue hover:border-accent-blue hover:shadow-md transition-all" href="#">
+                                    <span class="material-symbols-outlined text-[20px]">public</span>
+                                </a>
+                                <a class="size-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-slate-400 hover:text-accent-blue hover:border-accent-blue hover:shadow-md transition-all" href="support.html">
+                                    <span class="material-symbols-outlined text-[20px]">mail</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mt-10 text-center text-xs font-medium text-slate-400">
+                            © 2026 Snap or Scrap App. All rights reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+

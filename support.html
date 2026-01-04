@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Support - Snap or Scrap</title>
+    <meta name="description" content="Get help and support for Snap or Scrap. Contact us with questions or feedback.">
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FF3B30",
+                        "accent-purple": "#AF52DE",
+                        "accent-blue": "#007AFF",
+                        "accent-green": "#34C759",
+                        "accent-orange": "#FF9500",
+                        "background-light": "#F2F2F7",
+                        "background-card": "#FFFFFF",
+                        "slate-dark": "#1C1C1E",
+                        "slate-light": "#8E8E93",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                        "3xl": "2rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'card': '0 4px 20px rgba(0, 0, 0, 0.05)',
+                        'card-hover': '0 10px 25px rgba(0, 0, 0, 0.08)',
+                    }
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .btn-gradient {
+                @apply bg-gradient-to-r from-red-500 to-purple-600 hover:from-red-600 hover:to-purple-700 text-white shadow-lg shadow-purple-500/30;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background-light text-slate-dark antialiased overflow-x-hidden font-display">
+    <div class="relative flex flex-col min-h-screen w-full">
+        <!-- Navigation -->
+        <div class="w-full bg-white/90 backdrop-blur-xl sticky top-0 z-50 border-b border-gray-100">
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center py-0">
+                    <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+                        <header class="flex items-center justify-between whitespace-nowrap py-4">
+                            <a href="index.html" class="flex items-center gap-3">
+                                <div class="size-10 bg-gradient-to-br from-blue-400 to-purple-500 rounded-xl flex items-center justify-center shadow-md">
+                                    <span class="material-symbols-outlined text-white text-[24px]">photo_library</span>
+                                </div>
+                                <h2 class="text-slate-dark text-xl font-bold tracking-tight">Snap or Scrap</h2>
+                            </a>
+                            <div class="hidden md:flex items-center gap-10">
+                                <a class="text-slate-600 hover:text-accent-purple transition-colors text-sm font-semibold" href="features.html">Features</a>
+                                <a class="text-slate-600 hover:text-accent-purple transition-colors text-sm font-semibold" href="privacy.html">Privacy</a>
+                                <a class="text-accent-purple font-semibold text-sm" href="support.html">Support</a>
+                            </div>
+                            <div class="flex justify-end">
+                                <button class="btn-gradient flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 transition-all text-sm font-bold tracking-wide">
+                                    <span class="truncate">Get App</span>
+                                </button>
+                            </div>
+                        </header>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="w-full bg-white relative overflow-hidden py-16">
+            <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-blue-100/50 to-purple-100/50 rounded-full blur-3xl -z-10 translate-x-1/4 -translate-y-1/4"></div>
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+                        <div class="text-center max-w-3xl mx-auto">
+                            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 shadow-sm mb-6">
+                                <span class="material-symbols-outlined text-accent-blue text-[16px]">support_agent</span>
+                                <span class="text-accent-blue text-xs font-bold uppercase tracking-wider">We're Here to Help</span>
+                            </div>
+                            <h1 class="text-slate-dark text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-6">
+                                Support
+                            </h1>
+                            <p class="text-slate-500 text-xl font-medium leading-relaxed">
+                                Have a question or need help? We've got you covered.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Support Content -->
+        <div class="w-full bg-background-light py-16">
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1000px] flex-1">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                            <!-- Contact Card -->
+                            <div class="bg-white rounded-3xl p-8 shadow-card border border-gray-100">
+                                <div class="size-14 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-600 text-white flex items-center justify-center mb-6 shadow-lg shadow-blue-200">
+                                    <span class="material-symbols-outlined text-[28px]">mail</span>
+                                </div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-3">Email Us</h3>
+                                <p class="text-slate-500 mb-6">Have a question? Send us an email and we'll get back to you within 24 hours.</p>
+                                <a href="mailto:support@snaporscrap.app" class="inline-flex items-center gap-2 text-accent-blue font-semibold hover:underline">
+                                    support@snaporscrap.app
+                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                </a>
+                            </div>
+
+                            <!-- App Store Review -->
+                            <div class="bg-white rounded-3xl p-8 shadow-card border border-gray-100">
+                                <div class="size-14 rounded-2xl bg-gradient-to-br from-purple-400 to-purple-600 text-white flex items-center justify-center mb-6 shadow-lg shadow-purple-200">
+                                    <span class="material-symbols-outlined text-[28px]">star</span>
+                                </div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-3">Rate the App</h3>
+                                <p class="text-slate-500 mb-6">Enjoying Snap or Scrap? Leave us a review on the App Store—it really helps!</p>
+                                <a href="#" class="inline-flex items-center gap-2 text-accent-purple font-semibold hover:underline">
+                                    Leave a Review
+                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Section -->
+                        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-card border border-gray-100">
+                            <div class="text-center mb-10">
+                                <h2 class="text-3xl font-black text-slate-800 mb-3">Frequently Asked Questions</h2>
+                                <p class="text-slate-500">Quick answers to common questions</p>
+                            </div>
+
+                            <div class="space-y-6">
+                                <!-- FAQ Item 1 -->
+                                <div class="border-b border-gray-100 pb-6">
+                                    <h3 class="text-lg font-bold text-slate-800 mb-2 flex items-start gap-3">
+                                        <span class="size-6 rounded-lg bg-accent-blue/10 text-accent-blue flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <span class="material-symbols-outlined text-[14px]">help</span>
+                                        </span>
+                                        Does Snap or Scrap upload my photos to the cloud?
+                                    </h3>
+                                    <p class="text-slate-600 ml-9">
+                                        No! Your photos never leave your device. All scanning and analysis happens locally on your iPhone. We never upload, store, or have access to your photos.
+                                    </p>
+                                </div>
+
+                                <!-- FAQ Item 2 -->
+                                <div class="border-b border-gray-100 pb-6">
+                                    <h3 class="text-lg font-bold text-slate-800 mb-2 flex items-start gap-3">
+                                        <span class="size-6 rounded-lg bg-accent-green/10 text-accent-green flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <span class="material-symbols-outlined text-[14px]">help</span>
+                                        </span>
+                                        Can I recover photos after deleting them?
+                                    </h3>
+                                    <p class="text-slate-600 ml-9">
+                                        Yes! Deleted photos go to a temporary trash bin first. You have 30 days to recover them before they're permanently removed. You can also review your trash at any time within the app.
+                                    </p>
+                                </div>
+
+                                <!-- FAQ Item 3 -->
+                                <div class="border-b border-gray-100 pb-6">
+                                    <h3 class="text-lg font-bold text-slate-800 mb-2 flex items-start gap-3">
+                                        <span class="size-6 rounded-lg bg-accent-purple/10 text-accent-purple flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <span class="material-symbols-outlined text-[14px]">help</span>
+                                        </span>
+                                        Why do I need to grant photo library access?
+                                    </h3>
+                                    <p class="text-slate-600 ml-9">
+                                        We need access to your photo library to display and help you organize your photos. This is the only way the app can function. Rest assured, we only use this access to show you your photos—nothing is uploaded or shared.
+                                    </p>
+                                </div>
+
+                                <!-- FAQ Item 4 -->
+                                <div class="border-b border-gray-100 pb-6">
+                                    <h3 class="text-lg font-bold text-slate-800 mb-2 flex items-start gap-3">
+                                        <span class="size-6 rounded-lg bg-accent-orange/10 text-accent-orange flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <span class="material-symbols-outlined text-[14px]">help</span>
+                                        </span>
+                                        How does the blur detection work?
+                                    </h3>
+                                    <p class="text-slate-600 ml-9">
+                                        We use on-device machine learning to analyze image sharpness and detect motion blur. The analysis happens entirely on your iPhone and works even without an internet connection.
+                                    </p>
+                                </div>
+
+                                <!-- FAQ Item 5 -->
+                                <div class="border-b border-gray-100 pb-6">
+                                    <h3 class="text-lg font-bold text-slate-800 mb-2 flex items-start gap-3">
+                                        <span class="size-6 rounded-lg bg-red-100 text-red-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <span class="material-symbols-outlined text-[14px]">help</span>
+                                        </span>
+                                        Is the app free to use?
+                                    </h3>
+                                    <p class="text-slate-600 ml-9">
+                                        Yes! Snap or Scrap is free to download and use. We may offer optional premium features in the future, but the core functionality will always be free.
+                                    </p>
+                                </div>
+
+                                <!-- FAQ Item 6 -->
+                                <div>
+                                    <h3 class="text-lg font-bold text-slate-800 mb-2 flex items-start gap-3">
+                                        <span class="size-6 rounded-lg bg-blue-100 text-accent-blue flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <span class="material-symbols-outlined text-[14px]">help</span>
+                                        </span>
+                                        The app is running slowly. What can I do?
+                                    </h3>
+                                    <p class="text-slate-600 ml-9">
+                                        If you have a very large photo library (50,000+ photos), the initial scan may take a few minutes. Try closing other apps to free up memory. If issues persist, please email us with your device model and iOS version.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Still Need Help -->
+                        <div class="mt-12 text-center">
+                            <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-8 border border-blue-100">
+                                <h3 class="text-2xl font-bold text-slate-800 mb-3">Still need help?</h3>
+                                <p class="text-slate-500 mb-6">Can't find what you're looking for? We're happy to help.</p>
+                                <a href="mailto:support@snaporscrap.app" class="inline-flex items-center gap-3 bg-slate-dark text-white rounded-2xl h-12 px-6 font-bold hover:bg-black transition-all hover:scale-105 transform duration-200 shadow-lg">
+                                    <span class="material-symbols-outlined">mail</span>
+                                    Contact Support
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w-full bg-slate-50 border-t border-gray-200 py-12 mt-auto">
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+                        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                            <a href="index.html" class="flex items-center gap-3">
+                                <div class="size-8 bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-white text-[18px]">photo_library</span>
+                                </div>
+                                <span class="font-bold text-slate-800 text-lg">Snap or Scrap</span>
+                            </a>
+                            <div class="flex flex-wrap justify-center gap-8 text-sm font-semibold text-slate-500">
+                                <a class="hover:text-accent-blue transition-colors" href="privacy.html">Privacy Policy</a>
+                                <a class="hover:text-accent-blue transition-colors" href="support.html">Support</a>
+                                <a class="hover:text-accent-blue transition-colors" href="features.html">Features</a>
+                            </div>
+                            <div class="flex gap-4">
+                                <a class="size-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-slate-400 hover:text-accent-blue hover:border-accent-blue hover:shadow-md transition-all" href="#">
+                                    <span class="material-symbols-outlined text-[20px]">public</span>
+                                </a>
+                                <a class="size-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-slate-400 hover:text-accent-blue hover:border-accent-blue hover:shadow-md transition-all" href="mailto:support@snaporscrap.app">
+                                    <span class="material-symbols-outlined text-[20px]">mail</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mt-10 text-center text-xs font-medium text-slate-400">
+                            © 2026 Snap or Scrap App. All rights reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
