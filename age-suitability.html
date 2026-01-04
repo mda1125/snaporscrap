@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
+    <title>Age Suitability - Snap or Scrap</title>
+    <meta name="description" content="Age Suitability information for Snap or Scrap - Suitable for all ages.">
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FF3B30",
+                        "accent-purple": "#AF52DE",
+                        "accent-blue": "#007AFF",
+                        "accent-green": "#34C759",
+                        "accent-orange": "#FF9500",
+                        "background-light": "#F2F2F7",
+                        "background-card": "#FFFFFF",
+                        "slate-dark": "#1C1C1E",
+                        "slate-light": "#8E8E93",
+                    },
+                    fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"] },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "2xl": "1.5rem", "3xl": "2rem", "full": "9999px" },
+                    boxShadow: { 'card': '0 4px 20px rgba(0, 0, 0, 0.05)', 'card-hover': '0 10px 25px rgba(0, 0, 0, 0.08)', }
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .btn-gradient { @apply bg-gradient-to-r from-red-500 to-purple-600 hover:from-red-600 hover:to-purple-700 text-white shadow-lg shadow-purple-500/30; }
+        }
+    </style>
+</head>
+<body class="bg-background-light text-slate-dark antialiased overflow-x-hidden font-display">
+    <div class="relative flex flex-col min-h-screen w-full">
+        <!-- Navigation -->
+        <div class="w-full bg-white/90 backdrop-blur-xl sticky top-0 z-50 border-b border-gray-100">
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center py-0">
+                    <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+                        <header class="flex items-center justify-between whitespace-nowrap py-4">
+                            <a href="index.html" class="flex items-center gap-3">
+                                <div class="size-10 bg-gradient-to-br from-blue-400 to-purple-500 rounded-xl flex items-center justify-center shadow-md">
+                                    <span class="material-symbols-outlined text-white text-[24px]">photo_library</span>
+                                </div>
+                                <h2 class="text-slate-dark text-xl font-bold tracking-tight">Snap or Scrap</h2>
+                            </a>
+                            <div class="hidden md:flex items-center gap-10">
+                                <a class="text-slate-600 hover:text-accent-purple transition-colors text-sm font-semibold" href="features.html">Features</a>
+                                <a class="text-slate-600 hover:text-accent-purple transition-colors text-sm font-semibold" href="privacy.html">Privacy</a>
+                                <a class="text-slate-600 hover:text-accent-purple transition-colors text-sm font-semibold" href="support.html">Support</a>
+                            </div>
+                            <div class="flex justify-end">
+                                <button class="btn-gradient flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 transition-all text-sm font-bold tracking-wide">
+                                    <span class="truncate">Get App</span>
+                                </button>
+                            </div>
+                        </header>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero -->
+        <div class="w-full bg-white relative overflow-hidden py-16">
+            <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-gradient-to-br from-cyan-100/50 to-green-100/50 rounded-full blur-3xl -z-10 -translate-x-1/4 -translate-y-1/4"></div>
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+                        <div class="text-center max-w-3xl mx-auto">
+                            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-50 border border-cyan-100 shadow-sm mb-6">
+                                <span class="material-symbols-outlined text-cyan-600 text-[16px]">family_restroom</span>
+                                <span class="text-cyan-600 text-xs font-bold uppercase tracking-wider">All Ages</span>
+                            </div>
+                            <h1 class="text-slate-dark text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-6">
+                                Age Suitability
+                            </h1>
+                            <p class="text-slate-500 text-xl font-medium leading-relaxed">
+                                Snap or Scrap is designed to be safe and appropriate for users of all ages.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="w-full bg-white py-16">
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[800px] flex-1">
+                        <div class="bg-background-light rounded-3xl p-8 md:p-12 border border-gray-200">
+                            <!-- Overview -->
+                            <section class="mb-10">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="size-10 rounded-xl bg-green-100 text-accent-green flex items-center justify-center">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                    </span>
+                                    <h2 class="text-2xl font-bold text-slate-800">Suitable for All Ages</h2>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed mb-4">
+                                    Snap or Scrap is a photo organization utility that helps users clean up their photo library. The app is suitable for users of all ages because:
+                                </p>
+                                <ul class="space-y-2 text-slate-600">
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-green text-[18px] mt-0.5">check</span>
+                                        The app only accesses photos already on the user's own device
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-green text-[18px] mt-0.5">check</span>
+                                        No external content is displayed or downloaded
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-green text-[18px] mt-0.5">check</span>
+                                        No social features, messaging, or user interaction
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-green text-[18px] mt-0.5">check</span>
+                                        No user-generated content from other users
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <!-- No Objectionable Content -->
+                            <section class="mb-10">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="size-10 rounded-xl bg-blue-100 text-accent-blue flex items-center justify-center">
+                                        <span class="material-symbols-outlined">block</span>
+                                    </span>
+                                    <h2 class="text-2xl font-bold text-slate-800">No Objectionable Content</h2>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed mb-4">
+                                    Snap or Scrap does not contain or provide access to:
+                                </p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                    <div class="flex items-center gap-2 bg-white rounded-xl p-3 border border-gray-200">
+                                        <span class="material-symbols-outlined text-slate-400 text-[18px]">close</span>
+                                        <span class="text-slate-600 text-sm">Violence or graphic content</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 bg-white rounded-xl p-3 border border-gray-200">
+                                        <span class="material-symbols-outlined text-slate-400 text-[18px]">close</span>
+                                        <span class="text-slate-600 text-sm">Mature or adult themes</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 bg-white rounded-xl p-3 border border-gray-200">
+                                        <span class="material-symbols-outlined text-slate-400 text-[18px]">close</span>
+                                        <span class="text-slate-600 text-sm">Profanity or crude humor</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 bg-white rounded-xl p-3 border border-gray-200">
+                                        <span class="material-symbols-outlined text-slate-400 text-[18px]">close</span>
+                                        <span class="text-slate-600 text-sm">Gambling or simulated gambling</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 bg-white rounded-xl p-3 border border-gray-200">
+                                        <span class="material-symbols-outlined text-slate-400 text-[18px]">close</span>
+                                        <span class="text-slate-600 text-sm">Alcohol, tobacco, or drug references</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 bg-white rounded-xl p-3 border border-gray-200">
+                                        <span class="material-symbols-outlined text-slate-400 text-[18px]">close</span>
+                                        <span class="text-slate-600 text-sm">Horror or fear themes</span>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- What the App Does -->
+                            <section class="mb-10">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="size-10 rounded-xl bg-purple-100 text-accent-purple flex items-center justify-center">
+                                        <span class="material-symbols-outlined">info</span>
+                                    </span>
+                                    <h2 class="text-2xl font-bold text-slate-800">What the App Does</h2>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed mb-4">
+                                    Snap or Scrap is a simple utility app that:
+                                </p>
+                                <ul class="space-y-2 text-slate-600">
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-purple text-[18px] mt-0.5">photo_library</span>
+                                        Helps organize and clean up the user's existing photo library
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-purple text-[18px] mt-0.5">swipe</span>
+                                        Uses swipe gestures to review photos quickly
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-purple text-[18px] mt-0.5">delete</span>
+                                        Allows batch deletion of unwanted photos
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-purple text-[18px] mt-0.5">storage</span>
+                                        Helps free up storage space on the device
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <!-- Privacy & Safety -->
+                            <section class="mb-10">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="size-10 rounded-xl bg-orange-100 text-accent-orange flex items-center justify-center">
+                                        <span class="material-symbols-outlined">shield</span>
+                                    </span>
+                                    <h2 class="text-2xl font-bold text-slate-800">Privacy & Safety</h2>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed mb-4">
+                                    The app is designed with privacy and safety in mind:
+                                </p>
+                                <ul class="space-y-2 text-slate-600">
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-orange text-[18px] mt-0.5">check</span>
+                                        All processing happens locally on the device
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-orange text-[18px] mt-0.5">check</span>
+                                        No data is collected or transmitted
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-orange text-[18px] mt-0.5">check</span>
+                                        No internet connection required for core functionality
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-orange text-[18px] mt-0.5">check</span>
+                                        No accounts, logins, or personal information required
+                                    </li>
+                                </ul>
+                                <div class="mt-4 p-4 bg-orange-50 rounded-xl border border-orange-100">
+                                    <p class="text-accent-orange font-semibold">For more details, see our <a href="privacy.html" class="underline">Privacy Policy</a>.</p>
+                                </div>
+                            </section>
+
+                            <!-- Contact -->
+                            <section>
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="size-10 rounded-xl bg-blue-100 text-accent-blue flex items-center justify-center">
+                                        <span class="material-symbols-outlined">mail</span>
+                                    </span>
+                                    <h2 class="text-2xl font-bold text-slate-800">Questions?</h2>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed">
+                                    If you have any questions about age suitability, please <a href="https://docs.google.com/forms/d/e/1FAIpQLSfNCSIsP0AW6uLFzKkLOxqCsdVtTrAsFMl9Cc7syKgKwJEohw/viewform" target="_blank" class="text-accent-blue hover:underline font-semibold">submit a support request</a>.
+                                </p>
+                            </section>
+
+                            <div class="mt-10 pt-6 border-t border-gray-200 text-center">
+                                <p class="text-slate-400 text-sm font-medium">Last Updated: January 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w-full bg-slate-900 border-t border-slate-800 py-12 mt-auto">
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+                        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                            <a href="index.html" class="flex items-center gap-3">
+                                <div class="size-8 bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-white text-[18px]">photo_library</span>
+                                </div>
+                                <span class="font-bold text-white text-lg">Snap or Scrap</span>
+                            </a>
+                            <div class="flex flex-wrap justify-center gap-8 text-sm font-semibold text-slate-400">
+                                <a class="hover:text-white transition-colors" href="features.html">Features</a>
+                                <a class="hover:text-white transition-colors" href="privacy.html">Privacy Policy</a>
+                                <a class="hover:text-white transition-colors" href="support.html">Support</a>
+                            </div>
+                            <div class="flex gap-4">
+                                <a class="size-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-400 hover:text-white hover:border-slate-500 transition-all" href="https://docs.google.com/forms/d/e/1FAIpQLSfNCSIsP0AW6uLFzKkLOxqCsdVtTrAsFMl9Cc7syKgKwJEohw/viewform" target="_blank">
+                                    <span class="material-symbols-outlined text-[20px]">contact_support</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mt-10 text-center text-xs font-medium text-slate-500">
+                            © 2026 Snap or Scrap. All rights reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
