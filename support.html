@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Support - Snap or Scrap</title>
-    <meta name="description" content="Get help and support for Snap or Scrap. Contact us with questions or feedback.">
+    <meta name="description" content="Get help and support for Snap or Scrap. FAQs, troubleshooting, and contact information.">
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
@@ -16,40 +16,21 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#FF3B30",
-                        "accent-purple": "#AF52DE",
-                        "accent-blue": "#007AFF",
-                        "accent-green": "#34C759",
-                        "accent-orange": "#FF9500",
-                        "background-light": "#F2F2F7",
-                        "background-card": "#FFFFFF",
-                        "slate-dark": "#1C1C1E",
-                        "slate-light": "#8E8E93",
+                        "primary": "#FF3B30", "accent-purple": "#AF52DE", "accent-blue": "#007AFF",
+                        "accent-green": "#34C759", "accent-orange": "#FF9500", "background-light": "#F2F2F7",
+                        "background-card": "#FFFFFF", "slate-dark": "#1C1C1E", "slate-light": "#8E8E93",
                     },
-                    fontFamily: {
-                        "display": ["Plus Jakarta Sans", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.5rem",
-                        "lg": "0.75rem",
-                        "xl": "1rem",
-                        "2xl": "1.5rem",
-                        "3xl": "2rem",
-                        "full": "9999px"
-                    },
-                    boxShadow: {
-                        'card': '0 4px 20px rgba(0, 0, 0, 0.05)',
-                        'card-hover': '0 10px 25px rgba(0, 0, 0, 0.08)',
-                    }
+                    fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"] },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "2xl": "1.5rem", "3xl": "2rem", "full": "9999px" },
+                    boxShadow: { 'card': '0 4px 20px rgba(0, 0, 0, 0.05)', 'card-hover': '0 10px 25px rgba(0, 0, 0, 0.08)', }
                 },
             },
         }
     </script>
     <style type="text/tailwindcss">
         @layer utilities {
-            .btn-gradient {
-                @apply bg-gradient-to-r from-red-500 to-purple-600 hover:from-red-600 hover:to-purple-700 text-white shadow-lg shadow-purple-500/30;
-            }
+            .btn-gradient { @apply bg-gradient-to-r from-red-500 to-purple-600 hover:from-red-600 hover:to-purple-700 text-white shadow-lg shadow-purple-500/30; }
+            .faq-item { @apply bg-white rounded-2xl p-6 shadow-card border border-gray-100; }
         }
     </style>
 </head>
@@ -83,7 +64,7 @@
             </div>
         </div>
 
-        <!-- Hero Section -->
+        <!-- Hero -->
         <div class="w-full bg-white relative overflow-hidden py-16">
             <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-blue-100/50 to-purple-100/50 rounded-full blur-3xl -z-10 translate-x-1/4 -translate-y-1/4"></div>
             <div class="layout-container flex justify-center w-full">
@@ -95,10 +76,10 @@
                                 <span class="text-accent-blue text-xs font-bold uppercase tracking-wider">We're Here to Help</span>
                             </div>
                             <h1 class="text-slate-dark text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-6">
-                                Support
+                                How Can We Help?
                             </h1>
                             <p class="text-slate-500 text-xl font-medium leading-relaxed">
-                                Have a question or need help? We've got you covered.
+                                Find answers to common questions or get in touch with our team.
                             </p>
                         </div>
                     </div>
@@ -106,136 +87,45 @@
             </div>
         </div>
 
-        <!-- Support Content -->
-        <div class="w-full bg-background-light py-16">
+        <!-- Contact Cards -->
+        <div class="w-full bg-background-light py-12">
             <div class="layout-container flex justify-center w-full">
                 <div class="px-4 md:px-10 flex flex-1 justify-center">
                     <div class="layout-content-container flex flex-col max-w-[1000px] flex-1">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                            <!-- Contact Card -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div class="bg-white rounded-3xl p-8 shadow-card border border-gray-100">
                                 <div class="size-14 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-600 text-white flex items-center justify-center mb-6 shadow-lg shadow-blue-200">
                                     <span class="material-symbols-outlined text-[28px]">mail</span>
                                 </div>
                                 <h3 class="text-2xl font-bold text-slate-800 mb-3">Email Us</h3>
-                                <p class="text-slate-500 mb-6">Have a question? Send us an email and we'll get back to you within 24 hours.</p>
-                                <a href="mailto:support@snaporscrap.app" class="inline-flex items-center gap-2 text-accent-blue font-semibold hover:underline">
+                                <p class="text-slate-500 mb-4">Have a question? Send us an email and we'll get back to you within 24-48 hours.</p>
+                                <a href="mailto:support@snaporscrap.app" class="inline-flex items-center gap-2 text-accent-blue font-semibold hover:underline text-lg">
                                     support@snaporscrap.app
                                     <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
                                 </a>
+                                <div class="mt-6 p-4 bg-blue-50 rounded-xl border border-blue-100">
+                                    <p class="text-slate-600 text-sm"><strong>Before contacting, please include:</strong></p>
+                                    <ul class="text-slate-500 text-sm mt-2 space-y-1">
+                                        <li>• iPhone model (e.g., iPhone 14 Pro)</li>
+                                        <li>• iOS version (e.g., iOS 17.2)</li>
+                                        <li>• Description of the issue</li>
+                                    </ul>
+                                </div>
                             </div>
-
-                            <!-- App Store Review -->
                             <div class="bg-white rounded-3xl p-8 shadow-card border border-gray-100">
-                                <div class="size-14 rounded-2xl bg-gradient-to-br from-purple-400 to-purple-600 text-white flex items-center justify-center mb-6 shadow-lg shadow-purple-200">
+                                <div class="size-14 rounded-2xl bg-gradient-to-br from-orange-400 to-orange-600 text-white flex items-center justify-center mb-6 shadow-lg shadow-orange-200">
                                     <span class="material-symbols-outlined text-[28px]">star</span>
                                 </div>
                                 <h3 class="text-2xl font-bold text-slate-800 mb-3">Rate the App</h3>
-                                <p class="text-slate-500 mb-6">Enjoying Snap or Scrap? Leave us a review on the App Store—it really helps!</p>
-                                <a href="#" class="inline-flex items-center gap-2 text-accent-purple font-semibold hover:underline">
+                                <p class="text-slate-500 mb-4">Enjoying Snap or Scrap? Leave us a review on the App Store—it really helps!</p>
+                                <a href="#" class="inline-flex items-center gap-2 text-accent-orange font-semibold hover:underline text-lg">
                                     Leave a Review
                                     <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
                                 </a>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Section -->
-                        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-card border border-gray-100">
-                            <div class="text-center mb-10">
-                                <h2 class="text-3xl font-black text-slate-800 mb-3">Frequently Asked Questions</h2>
-                                <p class="text-slate-500">Quick answers to common questions</p>
-                            </div>
-
-                            <div class="space-y-6">
-                                <!-- FAQ Item 1 -->
-                                <div class="border-b border-gray-100 pb-6">
-                                    <h3 class="text-lg font-bold text-slate-800 mb-2 flex items-start gap-3">
-                                        <span class="size-6 rounded-lg bg-accent-blue/10 text-accent-blue flex items-center justify-center flex-shrink-0 mt-0.5">
-                                            <span class="material-symbols-outlined text-[14px]">help</span>
-                                        </span>
-                                        Does Snap or Scrap upload my photos to the cloud?
-                                    </h3>
-                                    <p class="text-slate-600 ml-9">
-                                        No! Your photos never leave your device. All scanning and analysis happens locally on your iPhone. We never upload, store, or have access to your photos.
-                                    </p>
+                                <div class="mt-6 p-4 bg-orange-50 rounded-xl border border-orange-100">
+                                    <p class="text-slate-600 text-sm"><strong>Have a feature request?</strong></p>
+                                    <p class="text-slate-500 text-sm mt-1">We love hearing from users! Email us with what you'd like to see and why it would be useful.</p>
                                 </div>
-
-                                <!-- FAQ Item 2 -->
-                                <div class="border-b border-gray-100 pb-6">
-                                    <h3 class="text-lg font-bold text-slate-800 mb-2 flex items-start gap-3">
-                                        <span class="size-6 rounded-lg bg-accent-green/10 text-accent-green flex items-center justify-center flex-shrink-0 mt-0.5">
-                                            <span class="material-symbols-outlined text-[14px]">help</span>
-                                        </span>
-                                        Can I recover photos after deleting them?
-                                    </h3>
-                                    <p class="text-slate-600 ml-9">
-                                        Yes! Deleted photos go to a temporary trash bin first. You have 30 days to recover them before they're permanently removed. You can also review your trash at any time within the app.
-                                    </p>
-                                </div>
-
-                                <!-- FAQ Item 3 -->
-                                <div class="border-b border-gray-100 pb-6">
-                                    <h3 class="text-lg font-bold text-slate-800 mb-2 flex items-start gap-3">
-                                        <span class="size-6 rounded-lg bg-accent-purple/10 text-accent-purple flex items-center justify-center flex-shrink-0 mt-0.5">
-                                            <span class="material-symbols-outlined text-[14px]">help</span>
-                                        </span>
-                                        Why do I need to grant photo library access?
-                                    </h3>
-                                    <p class="text-slate-600 ml-9">
-                                        We need access to your photo library to display and help you organize your photos. This is the only way the app can function. Rest assured, we only use this access to show you your photos—nothing is uploaded or shared.
-                                    </p>
-                                </div>
-
-                                <!-- FAQ Item 4 -->
-                                <div class="border-b border-gray-100 pb-6">
-                                    <h3 class="text-lg font-bold text-slate-800 mb-2 flex items-start gap-3">
-                                        <span class="size-6 rounded-lg bg-accent-orange/10 text-accent-orange flex items-center justify-center flex-shrink-0 mt-0.5">
-                                            <span class="material-symbols-outlined text-[14px]">help</span>
-                                        </span>
-                                        How does the blur detection work?
-                                    </h3>
-                                    <p class="text-slate-600 ml-9">
-                                        We use on-device machine learning to analyze image sharpness and detect motion blur. The analysis happens entirely on your iPhone and works even without an internet connection.
-                                    </p>
-                                </div>
-
-                                <!-- FAQ Item 5 -->
-                                <div class="border-b border-gray-100 pb-6">
-                                    <h3 class="text-lg font-bold text-slate-800 mb-2 flex items-start gap-3">
-                                        <span class="size-6 rounded-lg bg-red-100 text-red-500 flex items-center justify-center flex-shrink-0 mt-0.5">
-                                            <span class="material-symbols-outlined text-[14px]">help</span>
-                                        </span>
-                                        Is the app free to use?
-                                    </h3>
-                                    <p class="text-slate-600 ml-9">
-                                        Yes! Snap or Scrap is free to download and use. We may offer optional premium features in the future, but the core functionality will always be free.
-                                    </p>
-                                </div>
-
-                                <!-- FAQ Item 6 -->
-                                <div>
-                                    <h3 class="text-lg font-bold text-slate-800 mb-2 flex items-start gap-3">
-                                        <span class="size-6 rounded-lg bg-blue-100 text-accent-blue flex items-center justify-center flex-shrink-0 mt-0.5">
-                                            <span class="material-symbols-outlined text-[14px]">help</span>
-                                        </span>
-                                        The app is running slowly. What can I do?
-                                    </h3>
-                                    <p class="text-slate-600 ml-9">
-                                        If you have a very large photo library (50,000+ photos), the initial scan may take a few minutes. Try closing other apps to free up memory. If issues persist, please email us with your device model and iOS version.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Still Need Help -->
-                        <div class="mt-12 text-center">
-                            <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-8 border border-blue-100">
-                                <h3 class="text-2xl font-bold text-slate-800 mb-3">Still need help?</h3>
-                                <p class="text-slate-500 mb-6">Can't find what you're looking for? We're happy to help.</p>
-                                <a href="mailto:support@snaporscrap.app" class="inline-flex items-center gap-3 bg-slate-dark text-white rounded-2xl h-12 px-6 font-bold hover:bg-black transition-all hover:scale-105 transform duration-200 shadow-lg">
-                                    <span class="material-symbols-outlined">mail</span>
-                                    Contact Support
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -243,8 +133,262 @@
             </div>
         </div>
 
+        <!-- Getting Started -->
+        <div class="w-full bg-white py-16">
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1000px] flex-1">
+                        <div class="mb-10">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-50 text-accent-green text-xs font-bold uppercase tracking-wider border border-green-100 mb-4">
+                                <span class="material-symbols-outlined text-[16px]">play_arrow</span>
+                                Getting Started
+                            </div>
+                            <h2 class="text-slate-900 text-3xl font-black">How to Use Snap or Scrap</h2>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="faq-item">
+                                <h3 class="font-bold text-slate-800 mb-3">How do I start cleaning my library?</h3>
+                                <ol class="text-slate-600 text-sm space-y-2 list-decimal list-inside">
+                                    <li>Open Snap or Scrap</li>
+                                    <li>Grant photo library access when prompted</li>
+                                    <li>Wait for the initial scan to complete</li>
+                                    <li>Tap any category card (Screenshots, Blurry Photos, etc.)</li>
+                                    <li>Start swiping! Left to delete, right to keep</li>
+                                </ol>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="font-bold text-slate-800 mb-3">How long does the initial scan take?</h3>
+                                <p class="text-slate-600 text-sm mb-3">The first scan depends on your library size:</p>
+                                <ul class="text-slate-600 text-sm space-y-1">
+                                    <li>• 1,000 photos: ~30 seconds</li>
+                                    <li>• 5,000 photos: ~2 minutes</li>
+                                    <li>• 10,000+ photos: ~5 minutes</li>
+                                </ul>
+                                <p class="text-slate-500 text-sm mt-3">The app must remain open during the initial scan. After that, rescans are faster.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="font-bold text-slate-800 mb-3">How do I delete photos?</h3>
+                                <ol class="text-slate-600 text-sm space-y-2 list-decimal list-inside">
+                                    <li>Choose a category to clean up</li>
+                                    <li>Swipe left on photos you want to delete</li>
+                                    <li>Swipe right on photos you want to keep</li>
+                                    <li>After reviewing up to 50 photos, tap "Review Deletions"</li>
+                                    <li>Confirm the deletion queue</li>
+                                    <li>Tap "Delete All" to permanently remove photos</li>
+                                </ol>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="font-bold text-slate-800 mb-3">Can I undo a deletion?</h3>
+                                <p class="text-slate-600 text-sm">Before confirming deletion, you can restore any photo from the review screen. Once you tap "Delete All" and confirm, photos are permanently removed from your library.</p>
+                                <p class="text-slate-500 text-sm mt-3"><strong>Note:</strong> Deletions go to the "Recently Deleted" album where you have 30 days to recover them.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQs -->
+        <div class="w-full bg-background-light py-16">
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1000px] flex-1">
+                        <div class="mb-10">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 text-accent-purple text-xs font-bold uppercase tracking-wider border border-purple-100 mb-4">
+                                <span class="material-symbols-outlined text-[16px]">help</span>
+                                FAQs
+                            </div>
+                            <h2 class="text-slate-900 text-3xl font-black">Frequently Asked Questions</h2>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="faq-item">
+                                <h3 class="font-bold text-slate-800 mb-2 flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-accent-purple mt-0.5">help_outline</span>
+                                    Will this app delete photos I want to keep?
+                                </h3>
+                                <p class="text-slate-600 text-sm ml-9">No! You review every photo before deletion. You can also restore photos from the review screen before confirming.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="font-bold text-slate-800 mb-2 flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-accent-purple mt-0.5">help_outline</span>
+                                    Is this safe to use?
+                                </h3>
+                                <p class="text-slate-600 text-sm ml-9">Yes. The app uses iOS standard deletion methods. Deleted photos go to "Recently Deleted" where you have 30 days to recover them.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="font-bold text-slate-800 mb-2 flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-accent-purple mt-0.5">help_outline</span>
+                                    Does the app upload my photos anywhere?
+                                </h3>
+                                <p class="text-slate-600 text-sm ml-9"><strong>No.</strong> All analysis happens on your device. Your photos never leave your iPhone. See our <a href="privacy.html" class="text-accent-blue hover:underline">Privacy Policy</a> for details.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="font-bold text-slate-800 mb-2 flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-accent-purple mt-0.5">help_outline</span>
+                                    Can I use the app offline?
+                                </h3>
+                                <p class="text-slate-600 text-sm ml-9">Yes! The app works completely offline. No internet connection required.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="font-bold text-slate-800 mb-2 flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-accent-purple mt-0.5">help_outline</span>
+                                    What does "Hidden Gems" mean?
+                                </h3>
+                                <p class="text-slate-600 text-sm ml-9">Hidden Gems are high-quality photos you may have forgotten about. Our AI analyzes face detection, image composition, photo sharpness, and how long ago the photo was taken. Older, high-quality photos with clear subjects rank higher.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="font-bold text-slate-800 mb-2 flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-accent-purple mt-0.5">help_outline</span>
+                                    How is this different from the iOS Photos app?
+                                </h3>
+                                <p class="text-slate-600 text-sm ml-9">iOS Photos doesn't automatically categorize screenshots, blurry photos, or duplicates. Snap or Scrap uses AI to identify cleanup opportunities and makes deletion fast with swipe gestures.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="font-bold text-slate-800 mb-2 flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-accent-purple mt-0.5">help_outline</span>
+                                    Will this delete my iCloud photos too?
+                                </h3>
+                                <p class="text-slate-600 text-sm ml-9">If you use iCloud Photos, deletions sync across all devices. Photos moved to "Recently Deleted" will be removed from iCloud after 30 days.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="font-bold text-slate-800 mb-2 flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-accent-purple mt-0.5">help_outline</span>
+                                    What's the difference between duplicates and similar photos?
+                                </h3>
+                                <p class="text-slate-600 text-sm ml-9"><strong>Duplicates:</strong> Exactly the same photo saved twice. <strong>Similar Photos:</strong> Photos taken seconds apart (like burst mode) that look nearly identical but aren't exact copies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Troubleshooting -->
+        <div class="w-full bg-white py-16">
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1000px] flex-1">
+                        <div class="mb-10">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 text-accent-orange text-xs font-bold uppercase tracking-wider border border-orange-100 mb-4">
+                                <span class="material-symbols-outlined text-[16px]">build</span>
+                                Troubleshooting
+                            </div>
+                            <h2 class="text-slate-900 text-3xl font-black">Common Issues</h2>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="faq-item">
+                                <h3 class="font-bold text-slate-800 mb-3">The app says "No photos found" in a category</h3>
+                                <p class="text-slate-600 text-sm">This means the scan didn't find any photos matching that category. For example:</p>
+                                <ul class="text-slate-500 text-sm mt-2 space-y-1">
+                                    <li>• No screenshots = no screenshots in your library</li>
+                                    <li>• No blurry photos = all your photos are sharp!</li>
+                                </ul>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="font-bold text-slate-800 mb-3">Photos aren't deleting</h3>
+                                <p class="text-slate-600 text-sm mb-2">Make sure you:</p>
+                                <ol class="text-slate-500 text-sm space-y-1 list-decimal list-inside">
+                                    <li>Swipe photos left to mark them</li>
+                                    <li>Tap "Review Deletions"</li>
+                                    <li>Confirm each photo</li>
+                                    <li>Tap "Delete All" and confirm</li>
+                                </ol>
+                                <p class="text-slate-500 text-sm mt-2">If photos still aren't deleting, check if iOS is preventing deletion (read-only albums or synced photos can't be deleted).</p>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="font-bold text-slate-800 mb-3">The app is slow or freezing</h3>
+                                <p class="text-slate-600 text-sm mb-2">Try these steps:</p>
+                                <ol class="text-slate-500 text-sm space-y-1 list-decimal list-inside">
+                                    <li>Close and reopen the app</li>
+                                    <li>Restart your iPhone</li>
+                                    <li>Check for iOS updates</li>
+                                    <li>Make sure you have at least 1GB free storage</li>
+                                </ol>
+                                <p class="text-slate-500 text-sm mt-2">If issues persist, contact support.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h3 class="font-bold text-slate-800 mb-3">Statistics aren't updating</h3>
+                                <p class="text-slate-600 text-sm mb-2">Stats update after each session. If they're not updating:</p>
+                                <ol class="text-slate-500 text-sm space-y-1 list-decimal list-inside">
+                                    <li>Complete a full cleanup session</li>
+                                    <li>Confirm deletion</li>
+                                    <li>Check the Progress dashboard</li>
+                                </ol>
+                                <p class="text-slate-500 text-sm mt-2">If still not working, try rescanning your library from Settings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- System Requirements -->
+        <div class="w-full bg-background-light py-16">
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1000px] flex-1">
+                        <div class="bg-white rounded-3xl p-8 shadow-card border border-gray-100">
+                            <div class="flex items-center gap-3 mb-6">
+                                <span class="size-10 rounded-xl bg-blue-100 text-accent-blue flex items-center justify-center">
+                                    <span class="material-symbols-outlined">smartphone</span>
+                                </span>
+                                <h2 class="text-2xl font-bold text-slate-800">System Requirements</h2>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-bold text-slate-800 mb-3">Compatible with:</h4>
+                                    <ul class="text-slate-600 space-y-2">
+                                        <li class="flex items-center gap-2">
+                                            <span class="material-symbols-outlined text-accent-green text-[18px]">check_circle</span>
+                                            iOS 16.0 or later
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <span class="material-symbols-outlined text-accent-green text-[18px]">check_circle</span>
+                                            iPhone 8 and newer recommended
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-800 mb-3">Requires:</h4>
+                                    <ul class="text-slate-600 space-y-2">
+                                        <li class="flex items-center gap-2">
+                                            <span class="material-symbols-outlined text-accent-blue text-[18px]">photo_library</span>
+                                            Photo library access permission
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <span class="material-symbols-outlined text-accent-blue text-[18px]">storage</span>
+                                            At least 100MB free storage for the app
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Still Need Help -->
+        <div class="w-full bg-white py-16">
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1000px] flex-1">
+                        <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-10 border border-blue-100 text-center">
+                            <h3 class="text-3xl font-black text-slate-800 mb-4">Still need help?</h3>
+                            <p class="text-slate-500 text-lg mb-6">Can't find what you're looking for? We're happy to help.</p>
+                            <a href="mailto:support@snaporscrap.app" class="inline-flex items-center gap-3 bg-slate-dark text-white rounded-2xl h-14 px-8 font-bold hover:bg-black transition-all hover:scale-105 transform duration-200 shadow-lg">
+                                <span class="material-symbols-outlined">mail</span>
+                                Contact Support
+                            </a>
+                            <p class="text-slate-400 text-sm mt-4">We typically respond within 24-48 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Footer -->
-        <footer class="w-full bg-slate-50 border-t border-gray-200 py-12 mt-auto">
+        <footer class="w-full bg-slate-900 border-t border-slate-800 py-12 mt-auto">
             <div class="layout-container flex justify-center w-full">
                 <div class="px-4 md:px-10 flex flex-1 justify-center">
                     <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
@@ -253,24 +397,21 @@
                                 <div class="size-8 bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg flex items-center justify-center">
                                     <span class="material-symbols-outlined text-white text-[18px]">photo_library</span>
                                 </div>
-                                <span class="font-bold text-slate-800 text-lg">Snap or Scrap</span>
+                                <span class="font-bold text-white text-lg">Snap or Scrap</span>
                             </a>
-                            <div class="flex flex-wrap justify-center gap-8 text-sm font-semibold text-slate-500">
-                                <a class="hover:text-accent-blue transition-colors" href="privacy.html">Privacy Policy</a>
-                                <a class="hover:text-accent-blue transition-colors" href="support.html">Support</a>
-                                <a class="hover:text-accent-blue transition-colors" href="features.html">Features</a>
+                            <div class="flex flex-wrap justify-center gap-8 text-sm font-semibold text-slate-400">
+                                <a class="hover:text-white transition-colors" href="features.html">Features</a>
+                                <a class="hover:text-white transition-colors" href="privacy.html">Privacy Policy</a>
+                                <a class="hover:text-white transition-colors" href="support.html">Support</a>
                             </div>
                             <div class="flex gap-4">
-                                <a class="size-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-slate-400 hover:text-accent-blue hover:border-accent-blue hover:shadow-md transition-all" href="#">
-                                    <span class="material-symbols-outlined text-[20px]">public</span>
-                                </a>
-                                <a class="size-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-slate-400 hover:text-accent-blue hover:border-accent-blue hover:shadow-md transition-all" href="mailto:support@snaporscrap.app">
+                                <a class="size-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-400 hover:text-white hover:border-slate-500 transition-all" href="mailto:support@snaporscrap.app">
                                     <span class="material-symbols-outlined text-[20px]">mail</span>
                                 </a>
                             </div>
                         </div>
-                        <div class="mt-10 text-center text-xs font-medium text-slate-400">
-                            © 2026 Snap or Scrap App. All rights reserved.
+                        <div class="mt-10 text-center text-xs font-medium text-slate-500">
+                            © 2026 Snap or Scrap. All rights reserved.
                         </div>
                     </div>
                 </div>
@@ -279,4 +420,3 @@
     </div>
 </body>
 </html>
-

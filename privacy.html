@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Privacy Policy - Snap or Scrap</title>
-    <meta name="description" content="Privacy Policy for Snap or Scrap - Learn how we protect your data and respect your privacy.">
+    <meta name="description" content="Privacy Policy for Snap or Scrap - Your photos. Your device. Your privacy.">
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
@@ -26,30 +26,16 @@
                         "slate-dark": "#1C1C1E",
                         "slate-light": "#8E8E93",
                     },
-                    fontFamily: {
-                        "display": ["Plus Jakarta Sans", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.5rem",
-                        "lg": "0.75rem",
-                        "xl": "1rem",
-                        "2xl": "1.5rem",
-                        "3xl": "2rem",
-                        "full": "9999px"
-                    },
-                    boxShadow: {
-                        'card': '0 4px 20px rgba(0, 0, 0, 0.05)',
-                        'card-hover': '0 10px 25px rgba(0, 0, 0, 0.08)',
-                    }
+                    fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"] },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "2xl": "1.5rem", "3xl": "2rem", "full": "9999px" },
+                    boxShadow: { 'card': '0 4px 20px rgba(0, 0, 0, 0.05)', 'card-hover': '0 10px 25px rgba(0, 0, 0, 0.08)', }
                 },
             },
         }
     </script>
     <style type="text/tailwindcss">
         @layer utilities {
-            .btn-gradient {
-                @apply bg-gradient-to-r from-red-500 to-purple-600 hover:from-red-600 hover:to-purple-700 text-white shadow-lg shadow-purple-500/30;
-            }
+            .btn-gradient { @apply bg-gradient-to-r from-red-500 to-purple-600 hover:from-red-600 hover:to-purple-700 text-white shadow-lg shadow-purple-500/30; }
         }
     </style>
 </head>
@@ -83,7 +69,7 @@
             </div>
         </div>
 
-        <!-- Hero Section -->
+        <!-- Hero -->
         <div class="w-full bg-white relative overflow-hidden py-16">
             <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-gradient-to-br from-green-100/50 to-blue-100/50 rounded-full blur-3xl -z-10 -translate-x-1/4 -translate-y-1/4"></div>
             <div class="layout-container flex justify-center w-full">
@@ -92,13 +78,13 @@
                         <div class="text-center max-w-3xl mx-auto">
                             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-50 border border-green-100 shadow-sm mb-6">
                                 <span class="material-symbols-outlined text-accent-green text-[16px]">shield</span>
-                                <span class="text-accent-green text-xs font-bold uppercase tracking-wider">Your Privacy Matters</span>
+                                <span class="text-accent-green text-xs font-bold uppercase tracking-wider">Privacy First</span>
                             </div>
                             <h1 class="text-slate-dark text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-6">
-                                Privacy Policy
+                                Your Photos. Your Device. Your Privacy.
                             </h1>
                             <p class="text-slate-500 text-xl font-medium leading-relaxed">
-                                Last updated: January 1, 2026
+                                At Snap or Scrap, we believe your memories belong to you—and only you. That's why we've built our app with privacy at its core.
                             </p>
                         </div>
                     </div>
@@ -106,143 +92,260 @@
             </div>
         </div>
 
-        <!-- Privacy Content -->
-        <div class="w-full bg-background-light py-16">
+        <!-- Key Points -->
+        <div class="w-full bg-background-light py-12">
+            <div class="layout-container flex justify-center w-full">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="bg-white rounded-3xl p-8 shadow-card text-center border border-gray-100">
+                                <div class="size-16 rounded-2xl bg-green-100 text-accent-green flex items-center justify-center mx-auto mb-4">
+                                    <span class="material-symbols-outlined text-[32px]">cloud_off</span>
+                                </div>
+                                <h3 class="font-bold text-slate-800 text-xl mb-2">No Cloud Uploads</h3>
+                                <p class="text-slate-500">Your photos never leave your device. Ever.</p>
+                            </div>
+                            <div class="bg-white rounded-3xl p-8 shadow-card text-center border border-gray-100">
+                                <div class="size-16 rounded-2xl bg-blue-100 text-accent-blue flex items-center justify-center mx-auto mb-4">
+                                    <span class="material-symbols-outlined text-[32px]">visibility_off</span>
+                                </div>
+                                <h3 class="font-bold text-slate-800 text-xl mb-2">Zero Data Collection</h3>
+                                <p class="text-slate-500">We don't collect, store, or share your data.</p>
+                            </div>
+                            <div class="bg-white rounded-3xl p-8 shadow-card text-center border border-gray-100">
+                                <div class="size-16 rounded-2xl bg-purple-100 text-accent-purple flex items-center justify-center mx-auto mb-4">
+                                    <span class="material-symbols-outlined text-[32px]">block</span>
+                                </div>
+                                <h3 class="font-bold text-slate-800 text-xl mb-2">No Third Parties</h3>
+                                <p class="text-slate-500">No analytics, no ads, no partners with access.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Policy Content -->
+        <div class="w-full bg-white py-16">
             <div class="layout-container flex justify-center w-full">
                 <div class="px-4 md:px-10 flex flex-1 justify-center">
                     <div class="layout-content-container flex flex-col max-w-[800px] flex-1">
-                        <!-- Key Points -->
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-                            <div class="bg-white rounded-3xl p-6 shadow-card text-center border border-gray-100">
-                                <div class="size-14 rounded-2xl bg-green-100 text-accent-green flex items-center justify-center mx-auto mb-4">
-                                    <span class="material-symbols-outlined text-[28px]">cloud_off</span>
+                        <div class="bg-background-light rounded-3xl p-8 md:p-12 border border-gray-200">
+                            <!-- On-Device Processing -->
+                            <section class="mb-10">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="size-10 rounded-xl bg-green-100 text-accent-green flex items-center justify-center">
+                                        <span class="material-symbols-outlined">smartphone</span>
+                                    </span>
+                                    <h2 class="text-2xl font-bold text-slate-800">100% On-Device Processing</h2>
                                 </div>
-                                <h3 class="font-bold text-slate-800 mb-2">No Cloud Upload</h3>
-                                <p class="text-slate-500 text-sm">Your photos never leave your device</p>
-                            </div>
-                            <div class="bg-white rounded-3xl p-6 shadow-card text-center border border-gray-100">
-                                <div class="size-14 rounded-2xl bg-blue-100 text-accent-blue flex items-center justify-center mx-auto mb-4">
-                                    <span class="material-symbols-outlined text-[28px]">visibility_off</span>
+                                <p class="text-slate-600 leading-relaxed mb-4"><strong>Everything happens on your iPhone.</strong></p>
+                                <ul class="space-y-2 text-slate-600">
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-green text-[18px] mt-0.5">check</span>
+                                        All photo analysis uses Apple's on-device Vision framework
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-green text-[18px] mt-0.5">check</span>
+                                        AI-powered detection runs locally using Core Image
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-green text-[18px] mt-0.5">check</span>
+                                        No photos are uploaded to external servers
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-green text-[18px] mt-0.5">check</span>
+                                        No cloud processing or storage
+                                    </li>
+                                </ul>
+                                <div class="mt-4 p-4 bg-green-50 rounded-xl border border-green-100">
+                                    <p class="text-accent-green font-semibold">Your photos never leave your device.</p>
                                 </div>
-                                <h3 class="font-bold text-slate-800 mb-2">No Tracking</h3>
-                                <p class="text-slate-500 text-sm">We don't track your photo activity</p>
-                            </div>
-                            <div class="bg-white rounded-3xl p-6 shadow-card text-center border border-gray-100">
-                                <div class="size-14 rounded-2xl bg-purple-100 text-accent-purple flex items-center justify-center mx-auto mb-4">
-                                    <span class="material-symbols-outlined text-[28px]">sell</span>
+                            </section>
+
+                            <!-- Zero Data Collection -->
+                            <section class="mb-10">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="size-10 rounded-xl bg-blue-100 text-accent-blue flex items-center justify-center">
+                                        <span class="material-symbols-outlined">database</span>
+                                    </span>
+                                    <h2 class="text-2xl font-bold text-slate-800">Zero Data Collection</h2>
                                 </div>
-                                <h3 class="font-bold text-slate-800 mb-2">No Data Sales</h3>
-                                <p class="text-slate-500 text-sm">We never sell your information</p>
-                            </div>
-                        </div>
+                                <p class="text-slate-600 leading-relaxed mb-4"><strong>We don't collect, store, or share your data.</strong></p>
+                                <ul class="space-y-2 text-slate-600">
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-blue text-[18px] mt-0.5">check</span>
+                                        No user accounts or login required
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-blue text-[18px] mt-0.5">check</span>
+                                        No tracking or analytics
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-blue text-[18px] mt-0.5">check</span>
+                                        No photo metadata sent to our servers
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-accent-blue text-[18px] mt-0.5">check</span>
+                                        No behavioral data collection
+                                    </li>
+                                </ul>
+                                <div class="mt-4 p-4 bg-blue-50 rounded-xl border border-blue-100">
+                                    <p class="text-accent-blue font-semibold">We literally can't see your photos—even if we wanted to.</p>
+                                </div>
+                            </section>
 
-                        <!-- Policy Sections -->
-                        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-card border border-gray-100">
-                            <div class="prose prose-slate max-w-none">
-                                <section class="mb-10">
-                                    <h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-3">
-                                        <span class="size-8 rounded-lg bg-accent-blue/10 text-accent-blue flex items-center justify-center">
-                                            <span class="material-symbols-outlined text-[18px]">info</span>
-                                        </span>
-                                        Introduction
-                                    </h2>
-                                    <p class="text-slate-600 leading-relaxed">
-                                        Snap or Scrap ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.
-                                    </p>
-                                </section>
+                            <!-- Minimal Permissions -->
+                            <section class="mb-10">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="size-10 rounded-xl bg-purple-100 text-accent-purple flex items-center justify-center">
+                                        <span class="material-symbols-outlined">lock</span>
+                                    </span>
+                                    <h2 class="text-2xl font-bold text-slate-800">Minimal Permissions</h2>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed mb-4"><strong>We only ask for what we need.</strong></p>
+                                <div class="bg-white rounded-xl p-4 border border-gray-200 mb-4">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="material-symbols-outlined text-accent-purple">photo_library</span>
+                                        <h4 class="font-bold text-slate-800">Photos Access</h4>
+                                    </div>
+                                    <p class="text-slate-600 text-sm ml-9">Required to scan and organize your library. You can grant limited access to specific photos, and you can revoke access anytime in iOS Settings.</p>
+                                </div>
+                                <div class="p-4 bg-purple-50 rounded-xl border border-purple-100">
+                                    <p class="text-accent-purple font-semibold">That's it. No location. No contacts. No microphone.</p>
+                                </div>
+                            </section>
 
-                                <section class="mb-10">
-                                    <h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-3">
-                                        <span class="size-8 rounded-lg bg-accent-green/10 text-accent-green flex items-center justify-center">
-                                            <span class="material-symbols-outlined text-[18px]">folder</span>
-                                        </span>
-                                        Information We Collect
-                                    </h2>
-                                    <p class="text-slate-600 leading-relaxed mb-4">
-                                        <strong>Photo Library Access:</strong> Snap or Scrap requires access to your device's photo library to function. This access is used solely to display, analyze, and help you organize your photos. Your photos are processed entirely on your device and are never uploaded to our servers.
-                                    </p>
-                                    <p class="text-slate-600 leading-relaxed mb-4">
-                                        <strong>Anonymous Analytics:</strong> We may collect anonymous usage statistics to improve the app. This includes aggregated data like feature usage frequency, but never includes any personal information or photo data.
-                                    </p>
-                                    <p class="text-slate-600 leading-relaxed">
-                                        <strong>Crash Reports:</strong> If the app crashes, we may receive anonymous crash reports to help us fix bugs and improve stability.
-                                    </p>
-                                </section>
+                            <!-- How Data Is Used -->
+                            <section class="mb-10">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="size-10 rounded-xl bg-orange-100 text-accent-orange flex items-center justify-center">
+                                        <span class="material-symbols-outlined">settings</span>
+                                    </span>
+                                    <h2 class="text-2xl font-bold text-slate-800">How Your Data Is Used</h2>
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="bg-white rounded-xl p-4 border border-gray-200">
+                                        <h4 class="font-bold text-slate-800 mb-2">Photo Analysis</h4>
+                                        <ul class="text-slate-600 text-sm space-y-1">
+                                            <li>• Photos are analyzed on-device to detect screenshots, blurry photos, duplicates, and more</li>
+                                            <li>• Analysis uses Apple's native Vision and Core Image frameworks</li>
+                                            <li>• Results are stored locally on your device only</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-white rounded-xl p-4 border border-gray-200">
+                                        <h4 class="font-bold text-slate-800 mb-2">Statistics</h4>
+                                        <ul class="text-slate-600 text-sm space-y-1">
+                                            <li>• Cleanup stats are stored in your device's local storage</li>
+                                            <li>• Stats never sync to cloud or external servers</li>
+                                            <li>• You can reset stats anytime in Settings</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-white rounded-xl p-4 border border-gray-200">
+                                        <h4 class="font-bold text-slate-800 mb-2">No Third-Party Services</h4>
+                                        <ul class="text-slate-600 text-sm space-y-1">
+                                            <li>• We don't use third-party analytics tools</li>
+                                            <li>• We don't integrate advertising networks</li>
+                                            <li>• We don't share data with partners</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
 
-                                <section class="mb-10">
-                                    <h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-3">
-                                        <span class="size-8 rounded-lg bg-accent-purple/10 text-accent-purple flex items-center justify-center">
-                                            <span class="material-symbols-outlined text-[18px]">settings</span>
-                                        </span>
-                                        How We Use Your Information
-                                    </h2>
-                                    <ul class="list-disc list-inside text-slate-600 space-y-2">
-                                        <li>To provide and maintain our app's functionality</li>
-                                        <li>To analyze photos locally on your device for categorization</li>
-                                        <li>To improve and optimize the app experience</li>
-                                        <li>To detect and prevent technical issues</li>
-                                    </ul>
-                                </section>
+                            <!-- Security -->
+                            <section class="mb-10">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="size-10 rounded-xl bg-red-100 text-red-500 flex items-center justify-center">
+                                        <span class="material-symbols-outlined">security</span>
+                                    </span>
+                                    <h2 class="text-2xl font-bold text-slate-800">Security</h2>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed mb-4"><strong>Your photos are protected by iOS.</strong></p>
+                                <ul class="space-y-2 text-slate-600">
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-red-500 text-[18px] mt-0.5">check</span>
+                                        All photo access uses Apple's Photos framework with standard iOS security
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-red-500 text-[18px] mt-0.5">check</span>
+                                        Photos remain in your iOS photo library with full encryption
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-red-500 text-[18px] mt-0.5">check</span>
+                                        App uses iOS sandboxing for additional security
+                                    </li>
+                                </ul>
+                            </section>
 
-                                <section class="mb-10">
-                                    <h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-3">
-                                        <span class="size-8 rounded-lg bg-accent-orange/10 text-accent-orange flex items-center justify-center">
-                                            <span class="material-symbols-outlined text-[18px]">lock</span>
-                                        </span>
-                                        Data Security
-                                    </h2>
-                                    <p class="text-slate-600 leading-relaxed">
-                                        Your photos and data remain on your device at all times. We use industry-standard security measures to protect any anonymous data we do collect. Since photos are processed locally, there is no risk of your personal photos being exposed through our services.
-                                    </p>
-                                </section>
+                            <!-- Your Rights -->
+                            <section class="mb-10">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="size-10 rounded-xl bg-teal-100 text-teal-600 flex items-center justify-center">
+                                        <span class="material-symbols-outlined">verified_user</span>
+                                    </span>
+                                    <h2 class="text-2xl font-bold text-slate-800">Your Rights</h2>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed mb-4"><strong>You're in control:</strong></p>
+                                <ul class="space-y-2 text-slate-600">
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-teal-600 text-[18px] mt-0.5">toggle_on</span>
+                                        <strong>Access Control:</strong> Grant or revoke photo access in iOS Settings anytime
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-teal-600 text-[18px] mt-0.5">delete</span>
+                                        <strong>Data Deletion:</strong> Uninstalling the app removes all local data
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-teal-600 text-[18px] mt-0.5">logout</span>
+                                        <strong>Opt-Out:</strong> You can stop using the app anytime with no consequences
+                                    </li>
+                                </ul>
+                            </section>
 
-                                <section class="mb-10">
-                                    <h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-3">
-                                        <span class="size-8 rounded-lg bg-red-100 text-red-500 flex items-center justify-center">
-                                            <span class="material-symbols-outlined text-[18px]">share</span>
-                                        </span>
-                                        Third-Party Services
-                                    </h2>
-                                    <p class="text-slate-600 leading-relaxed">
-                                        We do not share your personal data or photos with any third parties. The app may use Apple's built-in frameworks for photo analysis, which operate entirely on your device.
-                                    </p>
-                                </section>
+                            <!-- Transparency -->
+                            <section class="mb-10">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="size-10 rounded-xl bg-yellow-100 text-yellow-600 flex items-center justify-center">
+                                        <span class="material-symbols-outlined">visibility</span>
+                                    </span>
+                                    <h2 class="text-2xl font-bold text-slate-800">Transparency</h2>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed mb-4"><strong>Open about our practices:</strong></p>
+                                <ul class="space-y-2 text-slate-600">
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-yellow-600 text-[18px] mt-0.5">check</span>
+                                        This privacy policy explains exactly what we do (and don't do)
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-yellow-600 text-[18px] mt-0.5">check</span>
+                                        No hidden data collection
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-yellow-600 text-[18px] mt-0.5">check</span>
+                                        No fine print loopholes
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="material-symbols-outlined text-yellow-600 text-[18px] mt-0.5">check</span>
+                                        No "partners" with access to your data
+                                    </li>
+                                </ul>
+                            </section>
 
-                                <section class="mb-10">
-                                    <h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-3">
-                                        <span class="size-8 rounded-lg bg-blue-100 text-accent-blue flex items-center justify-center">
-                                            <span class="material-symbols-outlined text-[18px]">child_care</span>
-                                        </span>
-                                        Children's Privacy
-                                    </h2>
-                                    <p class="text-slate-600 leading-relaxed">
-                                        Our app does not knowingly collect personal information from children under 13. If you believe we have collected such information, please contact us immediately.
-                                    </p>
-                                </section>
+                            <!-- Contact -->
+                            <section>
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="size-10 rounded-xl bg-blue-100 text-accent-blue flex items-center justify-center">
+                                        <span class="material-symbols-outlined">mail</span>
+                                    </span>
+                                    <h2 class="text-2xl font-bold text-slate-800">Questions?</h2>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed">
+                                    If you have questions about privacy, contact us at <a href="mailto:support@snaporscrap.app" class="text-accent-blue hover:underline font-semibold">support@snaporscrap.app</a>
+                                </p>
+                            </section>
 
-                                <section class="mb-10">
-                                    <h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-3">
-                                        <span class="size-8 rounded-lg bg-green-100 text-accent-green flex items-center justify-center">
-                                            <span class="material-symbols-outlined text-[18px]">edit</span>
-                                        </span>
-                                        Changes to This Policy
-                                    </h2>
-                                    <p class="text-slate-600 leading-relaxed">
-                                        We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last updated" date.
-                                    </p>
-                                </section>
-
-                                <section>
-                                    <h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-3">
-                                        <span class="size-8 rounded-lg bg-purple-100 text-accent-purple flex items-center justify-center">
-                                            <span class="material-symbols-outlined text-[18px]">mail</span>
-                                        </span>
-                                        Contact Us
-                                    </h2>
-                                    <p class="text-slate-600 leading-relaxed">
-                                        If you have any questions about this Privacy Policy, please contact us through our <a href="support.html" class="text-accent-blue hover:underline font-semibold">Support page</a>.
-                                    </p>
-                                </section>
+                            <div class="mt-10 pt-6 border-t border-gray-200 text-center">
+                                <p class="text-slate-400 text-sm font-medium">Last Updated: January 2026</p>
                             </div>
                         </div>
                     </div>
@@ -251,7 +354,7 @@
         </div>
 
         <!-- Footer -->
-        <footer class="w-full bg-slate-50 border-t border-gray-200 py-12 mt-auto">
+        <footer class="w-full bg-slate-900 border-t border-slate-800 py-12 mt-auto">
             <div class="layout-container flex justify-center w-full">
                 <div class="px-4 md:px-10 flex flex-1 justify-center">
                     <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
@@ -260,24 +363,21 @@
                                 <div class="size-8 bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg flex items-center justify-center">
                                     <span class="material-symbols-outlined text-white text-[18px]">photo_library</span>
                                 </div>
-                                <span class="font-bold text-slate-800 text-lg">Snap or Scrap</span>
+                                <span class="font-bold text-white text-lg">Snap or Scrap</span>
                             </a>
-                            <div class="flex flex-wrap justify-center gap-8 text-sm font-semibold text-slate-500">
-                                <a class="hover:text-accent-blue transition-colors" href="privacy.html">Privacy Policy</a>
-                                <a class="hover:text-accent-blue transition-colors" href="support.html">Support</a>
-                                <a class="hover:text-accent-blue transition-colors" href="features.html">Features</a>
+                            <div class="flex flex-wrap justify-center gap-8 text-sm font-semibold text-slate-400">
+                                <a class="hover:text-white transition-colors" href="features.html">Features</a>
+                                <a class="hover:text-white transition-colors" href="privacy.html">Privacy Policy</a>
+                                <a class="hover:text-white transition-colors" href="support.html">Support</a>
                             </div>
                             <div class="flex gap-4">
-                                <a class="size-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-slate-400 hover:text-accent-blue hover:border-accent-blue hover:shadow-md transition-all" href="#">
-                                    <span class="material-symbols-outlined text-[20px]">public</span>
-                                </a>
-                                <a class="size-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-slate-400 hover:text-accent-blue hover:border-accent-blue hover:shadow-md transition-all" href="support.html">
+                                <a class="size-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-400 hover:text-white hover:border-slate-500 transition-all" href="mailto:support@snaporscrap.app">
                                     <span class="material-symbols-outlined text-[20px]">mail</span>
                                 </a>
                             </div>
                         </div>
-                        <div class="mt-10 text-center text-xs font-medium text-slate-400">
-                            © 2026 Snap or Scrap App. All rights reserved.
+                        <div class="mt-10 text-center text-xs font-medium text-slate-500">
+                            © 2026 Snap or Scrap. All rights reserved.
                         </div>
                     </div>
                 </div>
@@ -286,4 +386,3 @@
     </div>
 </body>
 </html>
-
