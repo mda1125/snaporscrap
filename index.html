@@ -289,7 +289,7 @@
                                     </li>
                                     <li class="flex items-center gap-2">
                                         <span class="material-symbols-outlined text-purple-500 text-[16px]">check</span>
-                                        Duplicate & similar photos
+                                        Duplicate & look-alike photos
                                     </li>
                                     <li class="flex items-center gap-2">
                                         <span class="material-symbols-outlined text-purple-500 text-[16px]">check</span>
@@ -354,6 +354,26 @@
                                 </h2>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                <!-- Perceptual Duplicates -->
+                                <div class="group relative rounded-3xl p-6 bg-white border-2 border-purple-200 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                                    <div class="absolute top-0 right-0 w-32 h-32 bg-purple-100/50 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+                                    <div class="absolute top-3 left-3">
+                                        <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-purple-100 text-purple-600 text-[10px] font-bold uppercase tracking-wider">
+                                            <span class="material-symbols-outlined text-[12px]">new_releases</span>
+                                            New
+                                        </span>
+                                    </div>
+                                    <div class="relative flex flex-col h-full justify-between gap-4 pt-4">
+                                        <div class="size-12 rounded-2xl bg-gradient-to-br from-purple-500 to-indigo-600 text-white flex items-center justify-center shadow-lg shadow-purple-200">
+                                            <span class="material-symbols-outlined text-[24px]">image_search</span>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-slate-800 text-xl font-bold mb-2">🔍 Perceptual Duplicates</h3>
+                                            <p class="text-slate-500 text-sm">Goes beyond metadata to find visually identical photos—edited copies, WhatsApp compressions, and re-saved versions. Finds 2-3x more duplicates than basic detection.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <!-- Smart Categories -->
                                 <div class="group relative rounded-3xl p-6 bg-white border border-gray-100 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 overflow-hidden">
                                     <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100/50 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>

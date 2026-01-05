@@ -138,6 +138,17 @@
                                 <h4 class="font-bold text-slate-800 mb-2">Duplicate Detection</h4>
                                 <p class="text-slate-500 text-sm">Finds exact duplicates by comparing creation date, dimensions, and file size.</p>
                             </div>
+                            <div class="feature-card border-2 border-purple-200 bg-gradient-to-br from-white to-purple-50">
+                                <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-purple-100 text-purple-600 text-[10px] font-bold uppercase tracking-wider mb-3">
+                                    <span class="material-symbols-outlined text-[12px]">new_releases</span>
+                                    New
+                                </div>
+                                <div class="size-12 rounded-xl bg-gradient-to-br from-purple-500 to-indigo-600 text-white flex items-center justify-center mb-4 shadow-lg shadow-purple-200">
+                                    <span class="material-symbols-outlined">image_search</span>
+                                </div>
+                                <h4 class="font-bold text-slate-800 mb-2">Perceptual Duplicate Detection</h4>
+                                <p class="text-slate-500 text-sm">Uses Apple's Vision framework to find visually identical photos regardless of metadata—catches edited copies, re-saved versions, and compressed duplicates that look the same but have different file properties.</p>
+                            </div>
                             <div class="feature-card">
                                 <div class="size-12 rounded-xl bg-pink-100 text-pink-600 flex items-center justify-center mb-4">
                                     <span class="material-symbols-outlined">photo_library</span>
@@ -158,6 +169,110 @@
                                 </div>
                                 <h4 class="font-bold text-slate-800 mb-2">Hidden Gems Analysis</h4>
                                 <p class="text-slate-500 text-sm">Discovers high-quality forgotten photos using face detection, saliency analysis, and composition scoring.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Perceptual Duplicate Detection Highlight -->
+        <div class="w-full bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 py-16 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-purple-400/20 rounded-full translate-x-1/2 translate-y-1/2 blur-3xl"></div>
+            <div class="layout-container flex justify-center w-full relative z-10">
+                <div class="px-4 md:px-10 flex flex-1 justify-center">
+                    <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+                        <div class="flex flex-col lg:flex-row gap-12 items-center">
+                            <div class="lg:w-1/2">
+                                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white text-xs font-bold uppercase tracking-wider border border-white/30 mb-4">
+                                    <span class="material-symbols-outlined text-[16px]">new_releases</span>
+                                    New Feature
+                                </div>
+                                <h2 class="text-white text-3xl md:text-4xl font-black mb-4">🔍 Perceptual Duplicate Detection</h2>
+                                <p class="text-purple-100 text-lg mb-6">Most photo cleaners only find exact duplicates. Snap or Scrap goes further with <strong class="text-white">visual similarity detection</strong>.</p>
+                                <p class="text-purple-200 mb-8">We compare what photos <em>look like</em>, not just their metadata. This finds <strong class="text-white">2-3x more actual duplicates</strong> than basic detection—leading to real storage savings you can see.</p>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div class="flex items-start gap-3 bg-white/10 backdrop-blur rounded-xl p-4 border border-white/20">
+                                        <span class="material-symbols-outlined text-yellow-300">edit</span>
+                                        <div>
+                                            <h4 class="font-bold text-white text-sm">Edited Copies</h4>
+                                            <p class="text-purple-200 text-xs">Find originals and every cropped/filtered version</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3 bg-white/10 backdrop-blur rounded-xl p-4 border border-white/20">
+                                        <span class="material-symbols-outlined text-green-300">save</span>
+                                        <div>
+                                            <h4 class="font-bold text-white text-sm">Re-saved Photos</h4>
+                                            <p class="text-purple-200 text-xs">Catch photos saved from messages or social media</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3 bg-white/10 backdrop-blur rounded-xl p-4 border border-white/20">
+                                        <span class="material-symbols-outlined text-blue-300">chat</span>
+                                        <div>
+                                            <h4 class="font-bold text-white text-sm">WhatsApp Compressions</h4>
+                                            <p class="text-purple-200 text-xs">Identify compressed duplicates from messaging apps</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3 bg-white/10 backdrop-blur rounded-xl p-4 border border-white/20">
+                                        <span class="material-symbols-outlined text-orange-300">screenshot</span>
+                                        <div>
+                                            <h4 class="font-bold text-white text-sm">Screenshots of Photos</h4>
+                                            <p class="text-purple-200 text-xs">Detect when you've screenshotted your own images</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:w-1/2 flex justify-center">
+                                <div class="relative">
+                                    <div class="absolute inset-0 bg-gradient-to-br from-purple-400/30 to-blue-400/30 rounded-3xl blur-2xl"></div>
+                                    <div class="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20">
+                                        <div class="flex items-center gap-4 mb-6">
+                                            <div class="size-16 rounded-2xl bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center shadow-lg">
+                                                <span class="material-symbols-outlined text-white text-[32px]">image_search</span>
+                                            </div>
+                                            <div>
+                                                <h3 class="text-white font-bold text-xl">Look-alikes Found</h3>
+                                                <p class="text-purple-200 text-sm">Visually identical photos</p>
+                                            </div>
+                                        </div>
+                                        <div class="space-y-3">
+                                            <div class="flex items-center justify-between bg-white/10 rounded-xl p-3">
+                                                <div class="flex items-center gap-3">
+                                                    <div class="size-10 rounded-lg bg-gradient-to-br from-amber-300 to-orange-400"></div>
+                                                    <div>
+                                                        <p class="text-white text-sm font-medium">IMG_2847.jpg</p>
+                                                        <p class="text-purple-200 text-xs">Original • 4.2 MB</p>
+                                                    </div>
+                                                </div>
+                                                <span class="text-green-400 text-xs font-bold">KEEP</span>
+                                            </div>
+                                            <div class="flex items-center justify-between bg-white/10 rounded-xl p-3 opacity-70">
+                                                <div class="flex items-center gap-3">
+                                                    <div class="size-10 rounded-lg bg-gradient-to-br from-amber-300 to-orange-400"></div>
+                                                    <div>
+                                                        <p class="text-white text-sm font-medium">IMG_2847_edited.jpg</p>
+                                                        <p class="text-purple-200 text-xs">Cropped copy • 2.1 MB</p>
+                                                    </div>
+                                                </div>
+                                                <span class="text-red-400 text-xs font-bold">SCRAP</span>
+                                            </div>
+                                            <div class="flex items-center justify-between bg-white/10 rounded-xl p-3 opacity-70">
+                                                <div class="flex items-center gap-3">
+                                                    <div class="size-10 rounded-lg bg-gradient-to-br from-amber-300 to-orange-400"></div>
+                                                    <div>
+                                                        <p class="text-white text-sm font-medium">WhatsApp Image</p>
+                                                        <p class="text-purple-200 text-xs">Compressed • 0.8 MB</p>
+                                                    </div>
+                                                </div>
+                                                <span class="text-red-400 text-xs font-bold">SCRAP</span>
+                                            </div>
+                                        </div>
+                                        <div class="mt-6 pt-4 border-t border-white/20 text-center">
+                                            <p class="text-purple-200 text-sm">Storage saved: <strong class="text-white">2.9 MB</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
